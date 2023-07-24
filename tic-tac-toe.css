@@ -1,0 +1,86 @@
+
+
+
+body {
+  background-color: rgb(197, 174, 197);
+  overflow-x:hidden
+}
+
+#gameboard {
+  background-color: rgba(0,0,0,.2);
+  margin: 50px auto;
+  vertical-align: center;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
+}
+
+.cell{
+  background-color: rgb(222, 173, 255);
+  transition: background-color .5s;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:hover{
+  background-color: rgba(0,0,0,0);
+  transition: background-color .5s;
+  cursor: pointer;
+}
+.emoji{
+  font-size: 2em;
+}
+ 
+
+ .header {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-style: italic;
+  color: #c32aff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#restart-btn{
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(71, 10, 128);
+  background-color: white;
+  /* border: 1px solid rgb(158, 158, 158); */
+  padding: 5px;
+  margin-top: -5px;
+  margin-left: 30px;
+  transition: border, color, .5s;
+}
+#restart-btn:hover{
+  cursor: pointer;
+  color: #fa6fee;
+  transition: border, color, .5s;
+}
+#restart-btn:focus{
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#message{
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: 30px;
+  color: #f10697;
+  font-size: larger;
+}
+
+ 
